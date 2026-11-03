@@ -905,9 +905,9 @@
                 },
                 (err) => {
                     elements.locationIcon.className = "fa-solid fa-location-crosshairs text-sm text-white";
-                    let msg = "無法取得 GPS 位置，已切換至預設城市（臺北市）";
+                    let msg = "無法取得 GPS 位置!!!請重試!";
                     if (err.code === err.PERMISSION_DENIED) {
-                        msg = "定位權限遭拒絕，已切換至預設城市（臺北市）";
+                        msg = "定位權限遭拒絕!!!請開放權限!";
                     }
                     showToast(msg, "error");
                 },
